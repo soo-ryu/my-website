@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+nav {
+  position: absolute;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.topnav {
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 98%;
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+.topnav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  background: black;
+  padding: 5px 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.topnav a:hover {
+  background: rgba(255, 255, 255, 0.6);
+  color: black;
+  font-weight: 400;
+}
+
+.content {
+  margin-top: 4rem;
+  top: 0px;
+  position: relative;
+}  
+
+.main-title {
+  width: 100%;
+  float: left;
+  margin-top: 0;
+  padding: 2rem 3rem;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.vimeo {
+  display: block;
+  float: left;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  width: 98%;
+  min-width: 720px;
+}
+
+.column-40 img {
+  display: block;
+  float: left;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  width: 40%;
+  min-width: 720px;
+}
+
+.column-98 img {
+  display: block;
+  float: left;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  width: 98%;
+  min-width: 720px;
+}
+
+.main-text {
+  display: inline-block;
+  width: 50%;
+  position: right;
+  text-align: justify;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}  
