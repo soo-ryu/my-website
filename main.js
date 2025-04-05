@@ -1,8 +1,8 @@
 import * as THREE from 'three';
-import './style/style.css';
-import gsap from "gsap";
-import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
-import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
+import '/style/style.css';
+import gsap from "node-modules/gsap";
+import {OrbitControls} from 'node-modules/three/examples/jsm/controls/OrbitControls';
+import { OBJLoader } from 'node-modules/three/examples/jsm/loaders/OBJLoader.js';
 
 // Texture Loader
 //const loader = new THREE.TextureLoader()
@@ -48,7 +48,7 @@ scene.add(mesh, particlesMesh)
 // Load Model
 const objloader = new OBJLoader();
 objloader.load(
-  './assets/tree.obj', 
+  '/assets/tree.obj', 
   function ( object ) {
     scene.add( object );
   },
