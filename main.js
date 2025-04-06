@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import 'public/style/style.css';
+//import './style/style.css';
 import gsap from "gsap";
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
@@ -48,7 +48,7 @@ scene.add(mesh, particlesMesh)
 // Load Model
 const objloader = new OBJLoader();
 objloader.load(
-  'public/assets/tree.obj', 
+  '/assets/tree.obj', 
   function ( object ) {
     scene.add( object );
   },
