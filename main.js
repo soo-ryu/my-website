@@ -68,11 +68,21 @@ const sizes = {
   height: window.innerHeight,
 }
 
+/*
 //Light
 const light = new THREE.PointLight(0xffffff, 1, 100)
 light.position.set(0, 10, 10)
 light.intensity = 1.25
 scene.add(light)
+*/
+
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.2);
+scene.add(ambientLight);
+
+const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
+directionalLight.position.set(10, 10, 10);
+scene.add(directionalLight);
+
 
 //Camera
 const camera = new THREE.PerspectiveCamera(45, sizes.width / sizes.height, 0.1, 100)//closest dist0.1,furthest100
