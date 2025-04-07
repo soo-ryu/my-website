@@ -94,3 +94,50 @@ nav {
   font-size: 16px;
   font-weight: 300;
 }  
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content {
+    margin-top: 80px;
+  }
+  
+  .topnav {
+    flex-direction: wrap;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .topnav {
+    flex-direction: wrap;
+    align-items: center;
+  }
+
+  .main-title {
+    font-size: 14px;
+    padding: 1rem;
+  }
+
+  .main-text {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .yt, .gallery img {
+    width: 100%;
+    min-width: auto;
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .topnav a {
+    font-size: 0.9rem;
+    padding: 4px 6px;
+  }
+
+  .main-title {
+    font-size: 13px;
+  }
+}

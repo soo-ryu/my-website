@@ -76,10 +76,10 @@ light.intensity = 1.25
 scene.add(light)
 */
 
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.2);
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.05);
 scene.add(ambientLight);
 
-const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
+const directionalLight = new THREE.DirectionalLight(0xffffff, 0.7);
 directionalLight.position.set(10, 10, 10);
 scene.add(directionalLight);
 
